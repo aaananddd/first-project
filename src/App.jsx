@@ -9,40 +9,44 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Replace 'fa
 const App = () => {
   const tiles = [
     {
-      image:sun,
+      image:inter,
       title:"Modular Interiors",
-      desc:"lskjdfhaskjdfhaksjd"
+      desc:"Functional kitchen, Wardobe and storage"
     },
     {
       image:inter,
-      title:"Interiors",
-      desc:"5272395702934785"
+      title:"Modular Interiors",
+      desc:"Functional kitchen, Wardobe and storage"
     },
     {
-      image:sun,
-      title:"Modular",
-      desc:"{}{}{}{][][][](*)&*&*(*^%&%&3)}}"
+      image:inter,
+      title:"Modular Interiors",
+      desc:"Functional kitchen, Wardobe and storage"
     },
     {
-      image:sun,
-      title:"Modular",
-      desc:"{}{}{}{][][][](*)&*&*(*^%&%&3)}}"
+      image:inter,
+      title:"Modular Interiors",
+      desc:"Functional kitchen, Wardobe and storage"
     },
   ];
   return (
     <div>
-      <Header heading={"Homepage"} />
+      <Header heading={"LIVSPACE"} />
       <div className="">
-        <div classname="relativ">
+        <div classname="relative">
           <img src={sun} className="w-full" alt="sample image" />
         </div>
-        <div className="absolute inset-0 flex justify-center items-center mt-">
+        <div className="absolute inset-0 items-center p-40">
           <h1 className="text-white font-bold text-7xl p-8">
             Bringing beauty to every corner
           </h1>
+          <div className='flex flex-col items-center'>
+          <p className='font-semibold text-green-900 text-lg w-1/2 text-center'>Where creativity flourishes and functionality reigns, we design spaces that reflect your unique style and enhance your lifestyle.</p>
         </div>
+        </div>
+        
         <div>
-          <h1 className="font-bold text-center text-4xl p-5">
+          <h1 className="font-bold text-center text-4xl p-8">
             One-stop shop for all things interiors
           </h1>
           <p className="text-center text-l p-1">

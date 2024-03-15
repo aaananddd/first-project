@@ -13,15 +13,18 @@ const Header = ({heading}) => {
     </div>
     <div className="flex-none gap-2">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Link</a></li>
+      <li><a>HOME</a></li>
+      <li><a>ABOUT</a></li>
+      <li><a>CONTACT</a></li>
       <li>
         <details>
           <summary>
-            Parent
+            SOCIAL MEDIAS
           </summary>
           <ul className="p-2 bg-base-100 rounded-t-none">
             <li><a>Link 1</a></li>
             <li><a>Link 2</a></li>
+            <li><a>Link 3</a></li>
           </ul>
         </details>
       </li>
