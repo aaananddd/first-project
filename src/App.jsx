@@ -30,6 +30,7 @@ const App = () => {
           </p>
         </div>
         <div className="flex p-4">
+{[1,2,3,4].map(()=>(
           <div className="w-1/4 bg-slate-200 rounded-lg p-6 m-4">
             <img src={inter} className="rounded-lg" alt="sample image" />
             <h3 className="text-center font-semibold text-2xl p-2">
@@ -45,36 +46,8 @@ const App = () => {
               />
             </div>
           </div>
-
-          <div className="w-1/4 bg-slate-200  rounded-lg p-6 m-4">
-            <img src={inter} className="rounded-lg" alt="sample image" />
-            <h3 className="text-center font-semibold text-2xl p-2">
-              Modular Interiors
-            </h3>
-            <p className="text-center">
-              Functional kitchen, Wardobe and storage
-            </p>
-          </div>
-
-          <div className="w-1/4 bg-slate-200 rounded-lg p-6 m-4">
-            <img src={inter} className="rounded-lg" alt="sample image" />
-            <h3 className="text-center font-semibold text-2xl p-2">
-              Modular Interiors
-            </h3>
-            <p className="text-center">
-              Functional kitchen, Wardobe and storage
-            </p>
-          </div>
-
-          <div className="w-1/4 bg-slate-200  rounded-lg p-6 m-4">
-            <img src={inter} className="rounded-lg" alt="sample image" />
-            <h3 className="text-center font-semibold text-2xl p-2">
-              Modular Interiors
-            </h3>
-            <p className="text-center">
-              Functional kitchen, Wardobe and storage
-            </p>
-          </div>
+))}
+          
         </div>
       </div>
       <Footer name={"Anand"} />
