@@ -7,6 +7,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Replace 'faIcons' with the name of the icon you want to use
 
 const App = () => {
+  const tiles = [
+    {
+      image:sun,
+      title:"Modular Interiors",
+      desc:"lskjdfhaskjdfhaksjd"
+    },
+    {
+      image:inter,
+      title:"Interiors",
+      desc:"5272395702934785"
+    },
+    {
+      image:sun,
+      title:"Modular",
+      desc:"{}{}{}{][][][](*)&*&*(*^%&%&3)}}"
+    },
+    {
+      image:sun,
+      title:"Modular",
+      desc:"{}{}{}{][][][](*)&*&*(*^%&%&3)}}"
+    },
+  ];
   return (
     <div>
       <Header heading={"Homepage"} />
@@ -30,24 +52,23 @@ const App = () => {
           </p>
         </div>
         <div className="flex p-4">
-{[1,2,3,4].map(()=>(
-          <div className="w-1/4 bg-slate-200 rounded-lg p-6 m-4">
-            <img src={inter} className="rounded-lg" alt="sample image" />
-            <h3 className="text-center font-semibold text-2xl p-2">
-              Modular Interiors
-            </h3>
-            <p className="text-center">
-              Functional kitchen, Wardobe and storage
-            </p>
-            <div className="flex justify-center">
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="text-3xl text-center p-2"
-              />
+          {tiles.map((item) => (
+            <div className="w-1/4 bg-slate-200 rounded-lg p-6 m-4">
+              <img src={item.image} className="rounded-lg" alt="sample image" />
+              <h3 className="text-center font-semibold text-2xl p-2">
+                {item.title}
+              </h3>
+              <p className="text-center">
+                {item.desc}
+              </p>
+              <div className="flex justify-center">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="text-3xl text-center p-2"
+                />
+              </div>
             </div>
-          </div>
-))}
-          
+          ))}
         </div>
       </div>
       <Footer name={"Anand"} />
