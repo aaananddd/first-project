@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({heading}) => {
   return (
     <div className="navbar bg-base-100">
     <div className="flex-none">
@@ -9,7 +9,7 @@ const Header = () => {
       </button>
     </div>
     <div className="flex-1">
-      <a className="btn btn-ghost text-2xl font-extrabold">Anand</a>
+      <a className="btn btn-ghost text-2xl font-extrabold">{heading}</a>
     </div>
     <div className="flex-none gap-2">
     <ul className="menu menu-horizontal px-1">
