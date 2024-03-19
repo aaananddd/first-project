@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-import sun from "../public/images/inte.jpg";
-import inter from "../public/images/inta.jpg";
+import sun from "/images/inte.jpg";
+import inter from "/images/inta.jpg";
 import MyButton from "./component/MyButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Replace 'faIcons' with the name of the icon you want to use
+import Calculator from "./component/Calculator";
 
 const App = () => {
   const tiles = [
@@ -76,6 +77,7 @@ const App = () => {
           ))}
         </div>
         <div className="flex  flex-col items-center font-bold text-3xl w-full justify-center"><MyButton /></div>
+        <Calculator />
       </div>
       <Footer name={"Anand"} />
     </div>
