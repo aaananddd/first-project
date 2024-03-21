@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const Calculator = () => {
-  const [firstValue, setFirstValue] = useState('');
-  const [secondValue, setSecondValue] = useState('');
-  const [result, setResult] = useState('');
+  const [firstValue, setFirstValue] = useState("");
+  const [secondValue, setSecondValue] = useState("");
+  const [result, setResult] = useState("");
 
   const handleInputChange1 = (event) => {
     setFirstValue(event.target.value);
@@ -13,20 +13,19 @@ const Calculator = () => {
     setSecondValue(event.target.value);
   };
 
-  
   const Calculate = (operator) => {
     let res;
-    switch(operator) {
-      case '+':
+    switch (operator) {
+      case "+":
         res = Number(firstValue) + Number(secondValue);
         break;
-      case '-':
+      case "-":
         res = Number(firstValue) - Number(secondValue);
         break;
-      case '*':
+      case "*":
         res = Number(firstValue) * Number(secondValue);
         break;
-      case '/' :
+      case "/":
         res = Number(firstValue) / Number(secondValue);
         break;
     }
@@ -43,10 +42,18 @@ const Calculator = () => {
         onChange={handleInputChange1}
       />
       <div className="space-x-2">
-        <button className="btn btn-neutral" onClick = {() => Calculate('+')}>+</button>
-        <button className="btn btn-neutral"onClick = {() => Calculate('-')}>-</button>
-        <button className="btn btn-neutral"onClick = {() => Calculate('*')}>*</button>
-        <button className="btn btn-neutral"onClick = {() => Calculate('/')}>/</button>
+        <button className="btn btn-neutral" onClick={() => Calculate("+")}>
+          +
+        </button>
+        <button className="btn btn-neutral" onClick={() => Calculate("-")}>
+          -
+        </button>
+        <button className="btn btn-neutral" onClick={() => Calculate("*")}>
+          *
+        </button>
+        <button className="btn btn-neutral" onClick={() => Calculate("/")}>
+          /
+        </button>
       </div>
       <input
         type="number"
@@ -56,10 +63,15 @@ const Calculator = () => {
         onChange={handleInputChange2}
       />
       <div>
-      <input type="text" placeholder="result" className="input input-bordered w-full max-w-xs" value={result} readonly />
-        </div>
+        <input
+          type="text"
+          placeholder="result"
+          className="input input-bordered w-full max-w-xs"
+          value={result}
+          readOnly
+        />
+      </div>
     </div>
-    
   );
 };
 
