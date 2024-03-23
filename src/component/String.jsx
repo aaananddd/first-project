@@ -8,9 +8,15 @@ const String = () => {
   };
 
   return (
-    <div className="flex flex-col   justify-center items-center w-full p-12 font-bold text-3xl">
-      <input value={text} className="items-end justify-center border-slate-950" onChange={handleChange} />
-      <p className={text === "hello" ? "text-green-500" : ""}>
+    <div className="flex flex-col justify-center items-center w-full p-12 font-bold text-3xl">
+      <input
+        type="text"
+        value={text}
+        placeholder="Type here"
+        className="input input-bordered input-primary w-full max-w-xs"
+        onChange={handleChange}
+      />
+      <p className={text === "hello" ? "text-green-500" : "text-red-500"}>
         you typed : {text}
       </p>
       <button

@@ -10,6 +10,9 @@ import Calculator from "./component/Calculator";
 import Count from "./component/Count";
 import String from "./component/String";
 import Checkbox from "./component/Checkbox";
+import Loader from "./component/Loader";
+import Age from "./component/Age";
+import Effect from "./Effects/Effect";
 
 const App = () => {
   const tiles = [
@@ -41,12 +44,11 @@ const App = () => {
         <div className="relative">
           <img src={sun} className="w-full" alt="sample image" />
         </div>
-        <div className="absolute inset-0  flex flex-col justify-center items-center h-2/3 pt-40 text-center">
-          <h1 className="text-white font-bold text-7xl p-8">
+        <div className="absolute inset-0  flex flex-col justify-center items-center h-2/3 pt-20 text-center">
+          <h1 className="text-white font-bold text-7xl p-4">
             Bringing beauty to every corner
           </h1>
-
-          <p className="font-semibold text-green-900 text-lg w-1/2 ">
+          <p className="font-semibold text-green-900 text-lg w-1/2 p-2">
             Where creativity flourishes and functionality reigns, we design
             spaces that reflect your unique style and enhance your lifestyle.
           </p>
@@ -86,6 +88,8 @@ const App = () => {
         <Count />
         <String />
         <Checkbox />
+        <Age />
+        <Effect />
       </div>
       <Footer name={"Anand"} />
     </div>
